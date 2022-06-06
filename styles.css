@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans|Quicksand');
+
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Expletus Sans", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background-color: #18253A;
+  color: white;
+  font-family: Quicksand, Helvetica, sans-serif;
+}
+
+nav a:link, nav a:visited {
+  color: #1EA1AA
+}
+nav a:hover {
+  color: #EBEBEB;
+  background-color: #00495B;
+}
+
+nav {
+  background-color: #18253A;
+}
+
+.row-description {
+  font-size: 20px
+}
+
+.copyright {
+  font-size: 10px
+}
