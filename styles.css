@@ -1,31 +1,88 @@
 @import url('https://fonts.googleapis.com/css?family=Expletus+Sans|Quicksand');
 
+* {
+  padding: 0;
+  margin: 0;
+  /*box-sizing: border-box;*/
+}
+
+body {
+  background-color: #18253A;
+  font-family: Quicksand, Helvetica, sans-serif;
+}
+
+.page-wrapper {
+  max-width: 1240px;
+  margin: 0px auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Expletus Sans";
+  font-weight: normal;
+}
+
+header {
+  align-items: center;
+}
 
 a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Expletus Sans", sans-serif;
-  font-weight: normal;
-}
-
-body {
-  background-color: #18253A;
-  color: white;
-  font-family: Quicksand, Helvetica, sans-serif;
-}
-
-nav a:link, nav a:visited {
-  color: #1EA1AA
-}
-nav a:hover {
-  color: #EBEBEB;
-  background-color: #00495B;
+footer {
+  padding: 40px 80px;
 }
 
 nav {
-  background-color: #18253A;
+  display: flex;
+  justify-content: space-between;
+  
+  font-size: 20px;
+  padding: 10px 0;
+  white-space: nowrap;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.name-box {
+  color: #EBEBEB;
+  padding-left: 10px;
+}
+
+nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-link {
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+nav a {
+    color: #1EA1AA;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav a:visited {
+    color: #1EA1AA
+}
+nav a:hover {
+    color: #EBEBEB;
+}
+
+.banner-box img {
+  width: 100%;
+  height: auto;
 }
 
 .row-description {
@@ -34,4 +91,42 @@ nav {
 
 .copyright {
   font-size: 10px
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  margin: 25px 35px;
+  padding: 40px 0px;
+}
+
+.text-cell-right {
+  max-width: 460px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.text-cell-left {
+  max-width: 460px;
+  text-align: left;
+  padding-right: 50px;
+}
+
+.text-cell-left h2, .text-cell-right h2, .invite-wrapper h2{
+  color: #9B287B;
+}
+
+.text-cell-left p, .text-cell-right p, .invite-wrapper p {
+  color: #EBEBEB;
+  line-height: 1em;
+}
+
+.invite-wrapper {
+  padding: 25px 80px;
+  text-align: center;
+}
+
+.copyright {
+  color: #1EA1AA;
 }
